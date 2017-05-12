@@ -19,7 +19,7 @@ The final output is in the following path /user/cloudera/pageranksorting/output.
 
 **LinkGraph.java :**  
  
-**First MR :- **
+**First MR :-**
 This MR job is used to compute the number of lines in the files.
      Mapper description:
 	This is used to emit ("1","1");
@@ -54,13 +54,13 @@ I have implemented a comparator to sort it in descending order before it sends t
 **Reducer Description:-** 
 This justs writes the output the file. Here I interchange the key and value before writing it. I have set the reducer count to 1.
 
-**InvertedIndex.java **
+**InvertedIndex.java**
 This is used to generate the inverted index for the words in the text tag.
 
 **Map:-** 
 This is used split the words and write the words as key and their ids as value.
 
-**Reduce:- **
+**Reduce:-**
 This is used write the page rank values in descending order in the file.
 
 **Commands to run InvertedIndex:-** 
